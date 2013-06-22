@@ -58,6 +58,7 @@
     memset(buf, MAXDATASIZE, 0);
     numbytes = send(sockfd, password, 15,0);
     numbytes = recv(sockfd, buf, MAXDATASIZE-1, 0);
+    numbytes = send(sockfd, "QUIT\r\n", 6,0);
     sprintf(*buffybuf, "%s", buf);
 
     buf[numbytes] = '\0';
