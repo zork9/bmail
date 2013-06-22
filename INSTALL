@@ -1,0 +1,6 @@
+installation instructions :
+
+. download and install glib-1.2 and gtk+-1.2 from ftp://ftp.gnome.org/pub/sources
+. edit Makefile
+. edit socket.c for setting the servername 
+. compile with 'make' or ./build.sh' 
